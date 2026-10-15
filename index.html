@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryCast | Some stories deserve to be heard</title>
+  <meta name="description" content="StoryCast is a quiet publication for audio, video, and human stories.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="site-header__logo" href="index.html">StoryCast</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="index.html" aria-current="page">Stories</a></li>
+        <li><a class="site-nav__link" href="about.html">About &amp; Access</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+       <section class="hero" aria-labelledby="hero-title">
+      <p class="hero__label">Audio · Video · Human stories</p>
+      <h1 class="hero__title" id="hero-title">Some stories deserve to be heard.</h1>
+      <p class="hero__text">
+        A thoughtful collection of voices, moments, and experiences, told in sound and moving image.
+      </p>
+      <a class="hero__link" href="#stories">Discover the stories</a>
+    </section>
+
+        <section class="stories" id="stories" aria-labelledby="stories-title">
+      <h2 class="stories__title" id="stories-title">Selected stories</h2>
+      <p class="stories__intro">Listen, watch, or read along.</p>
+
+      <ol class="story-list">
+        <li class="story-entry">
+          <span class="story-entry__number" aria-hidden="true">01</span>
+          <img class="story-entry__image" src="assets/images/story-1.jpg" alt="Old family photographs spread on a table" width="300" height="200" loading="lazy">
+          <div class="story-entry__body">
+            <p class="story-entry__meta">Audio story · 6 minutes · Transcript available</p>
+            <h3 class="story-entry__title">
+              <a href="story/story-one.html">The things we carry</a>
+            </h3>
+            <p class="story-entry__text">A conversation about memory, belonging, and home.</p>
+          </div>
+        </li>
+
+        <li class="story-entry">
+          <span class="story-entry__number" aria-hidden="true">02</span>
+          <img class="story-entry__image" src="assets/images/story-2.jpg" alt="A man looking thoughtfully out of a window" width="300" height="200" loading="lazy">
+          <div class="story-entry__body">
+            <p class="story-entry__meta">Short film · 4 minutes · Captions available</p>
+            <h3 class="story-entry__title">
+              <a href="story/story-one.html">Learning to begin again</a>
+            </h3>
+            <p class="story-entry__text">On change, courage, and the ordinary work of hope.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p class="site-footer__brand">StoryCast</p>
+    <nav class="site-footer__nav" aria-label="Footer">
+      <ul class="site-footer__list">
+        <li><a class="site-footer__link" href="index.html">Home</a></li>
+        <li><a class="site-footer__link" href="index.html#stories">Stories</a></li>
+        <li><a class="site-footer__link" href="about.html">About &amp; Access</a></li>
+      </ul>
+    </nav>
+    <p class="site-footer__note">Some content on this site is fictional and made for illustration.</p>
+  </footer>
+</body>
+</html>
