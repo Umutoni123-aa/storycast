@@ -19,7 +19,8 @@
 
   // Visible focus for keyboard users
   a:focus-visible,
-  button:focus-visible {
+  button:focus-visible,
+  audio:focus-visible {
     outline: 3px solid $oxblood;
     outline-offset: 3px;
   }

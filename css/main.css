@@ -91,6 +91,55 @@
     flex-wrap: wrap;
     gap: 1.5rem;
   }
+  .breadcrumb {
+    padding-block: 1.5rem;
+  }
+  .story {
+    max-width: 40rem;
+    padding-bottom: 3rem;
+  }
+  .story__header {
+    padding-block: 3rem;
+  }
+  .story__header > * + * {
+    margin-top: 1.5rem;
+  }
+  .story__media,
+  .transcript {
+    margin-top: 3rem;
+  }
+  .transcript > * + * {
+    margin-top: 1.5rem;
+  }
+  .about {
+    max-width: 40rem;
+    padding-block: 5rem;
+  }
+  .about > * + * {
+    margin-top: 1.5rem;
+  }
+  .access,
+  .feedback {
+    max-width: 40rem;
+    padding-block: 3rem;
+    border-top: 1px solid #DDD5C9;
+  }
+  .access__list {
+    margin-top: 1.5rem;
+  }
+  .access__item {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: 1.5rem;
+    padding-block: 1rem;
+    border-top: 1px solid #DDD5C9;
+  }
+  .access__item:last-child {
+    border-bottom: 1px solid #DDD5C9;
+  }
+  .feedback > * + * {
+    margin-top: 1rem;
+  }
 }
 @layer components {
   .hero__label,
@@ -154,6 +203,72 @@
       gap: 1rem;
     }
   }
+  .breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+  .breadcrumb__list li + li::before {
+    content: "/";
+    margin-right: 0.5rem;
+    color: #242321;
+  }
+  .story__label {
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #963D48;
+  }
+  .story__intro {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 1.25rem;
+  }
+  .story__credit {
+    font-size: 0.875rem;
+  }
+  .story__section-title {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #DDD5C9;
+  }
+  .story__figure audio {
+    width: 100%;
+  }
+  .story__caption {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+  }
+  .transcript {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+  .about__label {
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #963D48;
+  }
+  .about__text {
+    font-size: 1.25rem;
+  }
+  .access__item dt {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 1.25rem;
+  }
+  .access__item dd {
+    margin: 0;
+  }
+  .feedback__link {
+    display: inline-block;
+    font-weight: 600;
+  }
+  @media (max-width: 36rem) {
+    .access__item {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+  }
 }
 @layer utilities {
   .skip-link {
@@ -169,7 +284,8 @@
     transform: translateY(0);
   }
   a:focus-visible,
-  button:focus-visible {
+  button:focus-visible,
+  audio:focus-visible {
     outline: 3px solid #963D48;
     outline-offset: 3px;
   }
