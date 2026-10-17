@@ -1,6 +1,6 @@
 # StoryCast
 
-StoryCast is an accessible 3-page microsite for audio and video stories, built for the Advanced Front-End Web Development course. It is a calm, typography-led "online magazine" where the story is the main character.
+StoryCast is an accessible 3-page microsite for audio and video stories, built for the Advanced Front-End Web Development course . It is a calm, typography-led "online magazine" where the story is the main character.
 
 Built with semantic HTML5, Sass, and vanilla CSS. No frameworks.
 
@@ -16,8 +16,8 @@ Built with semantic HTML5, Sass, and vanilla CSS. No frameworks.
 ## Design and research
 
 - Sitemap (Figma): https://words-sling-36885228.figma.site/
-- Wireframes (3 pages): [add Figma link]
-- High-fidelity mockups (3 pages): [add Figma link]
+- Wireframes (3 pages): https://www.figma.com/board/jyILU2ghbzIhKhMHHmVHmg/StoryCast---Design?node-id=1-772&t=tQ9bFURovaoiqYTB-1
+- High-fidelity mockups (3 pages): https://www.figma.com/board/jyILU2ghbzIhKhMHHmVHmg/StoryCast---Design?node-id=1-772&t=tQ9bFURovaoiqYTB-1
 - Research document: [`docs/research.pdf`](./docs/research.pdf)
 - Sitemap (PDF): [`docs/sitemap.pdf`](./docs/sitemap.pdf)
 
