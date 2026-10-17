@@ -1,0 +1,40 @@
+@use 'colors' as *;
+@use 'spacing' as *;
+
+@layer utilities {
+  // Skip link: hidden until you press Tab
+  .skip-link {
+    position: absolute;
+    top: 0;
+    left: $space-sm;
+    padding: $space-xs $space-sm;
+    background: $ink;
+    color: $paper;
+    transform: translateY(-120%);
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+
+  // Visible focus for keyboard users
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid $oxblood;
+    outline-offset: 3px;
+  }
+
+  // Mark the current page in the menu
+  [aria-current='page'] {
+    font-weight: 600;
+  }
+
+  // Respect users who want less motion
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

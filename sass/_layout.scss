@@ -1,0 +1,59 @@
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'spacing' as *;
+
+@layer layout {
+  .site-header,
+  .site-footer,
+  main {
+    width: min(100% - 2 * #{$space-md}, #{$content-width});
+    margin-inline: auto;
+  }
+
+  // Header (Flexbox)
+  .site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: $space-sm;
+    padding-block: $space-md;
+    border-bottom: 1px solid $stone;
+  }
+
+  .site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md;
+  }
+
+  // Hero
+  .hero {
+    max-width: $reading-width;
+    padding-block: $space-xl;
+  }
+
+  .hero > * + * {
+    margin-top: $space-md;
+  }
+
+  // Stories section
+  .stories {
+    padding-block: $space-lg;
+    border-top: 1px solid $stone;
+  }
+
+  // Footer (Grid)
+  .site-footer {
+    display: grid;
+    gap: $space-sm;
+    padding-block: $space-lg;
+    border-top: 1px solid $stone;
+  }
+
+  .site-footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md;
+  }
+}

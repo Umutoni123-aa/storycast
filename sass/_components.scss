@@ -1,0 +1,84 @@
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'spacing' as *;
+
+@layer components {
+  // Small uppercase labels
+  .hero__label,
+  .story-entry__meta {
+    font-size: $text-sm;
+    letter-spacing: 0.08em;
+  }
+
+  .hero__label {
+    text-transform: uppercase;
+    color: $oxblood;
+  }
+
+  .story-entry__meta {
+    color: $ink;
+  }
+
+  .hero__text,
+  .stories__intro {
+    font-size: $text-lg;
+  }
+
+  .hero__link {
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  .stories__intro {
+    margin-top: $space-xs;
+  }
+
+  // Story list: this is the container
+  .story-list {
+    container-type: inline-size;
+    margin-top: $space-lg;
+  }
+
+  // Story entry (Grid)
+  .story-entry {
+    display: grid;
+    grid-template-columns: 3rem 9rem minmax(0, 1fr);
+    gap: $space-md;
+    align-items: start;
+    padding-block: $space-md;
+    border-top: 1px solid $stone;
+  }
+
+  .story-entry:last-child {
+    border-bottom: 1px solid $stone;
+  }
+
+  .story-entry__number {
+    font-family: $font-display;
+    font-size: $text-xl;
+    line-height: 1;
+    color: $oxblood;
+  }
+
+  .story-entry__image {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+  .story-entry__title {
+    margin-block: $space-xs;
+  }
+
+  .story-entry__title a {
+    color: $ink;
+  }
+
+  // Container query: when the list is narrow, stack the entry
+  @container (max-width: 34rem) {
+    .story-entry {
+      grid-template-columns: 1fr;
+      gap: $space-sm;
+    }
+  }
+}
