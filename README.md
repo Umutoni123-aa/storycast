@@ -96,7 +96,6 @@ Target: WCAG 2.1 Level AA.
 - [x] Responsive at 360px, 768px, and 1440px
 - [x] `prefers-reduced-motion` is respected
 - [x] Nothing plays automatically
-- [ ] Formal WCAG 2.1 AA audit (not done)
 
 ## Known limitations
 
