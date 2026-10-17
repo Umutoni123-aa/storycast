@@ -79,6 +79,14 @@
     margin-top: $space-lg;
   }
 
+  .story__media {
+    width: min(60rem, calc(100vw - 2 * #{$space-md}));
+  }
+
+  .story__figure {
+    margin: 0;
+  }
+
   .transcript > * + * {
     margin-top: $space-md;
   }
