@@ -1,11 +1,5 @@
-@use 'colors' as *;
-@use 'typography' as *;
-@use 'spacing' as *;
-
-body {
-  background: $paper;
-  color: $ink;
-  font-family: $font-ui;
-  font-size: $text-base;
-  line-height: $line-height-body;
-}
+@use 'reset';
+@use 'base';
+@use 'layout';
+@use 'components';
+@use 'accessibility';

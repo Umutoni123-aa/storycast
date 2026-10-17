@@ -81,4 +81,89 @@
       gap: $space-sm;
     }
   }
+    // Breadcrumb
+  .breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-xs;
+    font-size: $text-sm;
+  }
+
+  .breadcrumb__list li + li::before {
+    content: '/';
+    margin-right: $space-xs;
+    color: $ink;
+  }
+
+  // Story header
+  .story__label {
+    font-size: $text-sm;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $oxblood;
+  }
+
+  .story__intro {
+    font-family: $font-display;
+    font-size: $text-lg;
+  }
+
+  .story__credit {
+    font-size: $text-sm;
+  }
+
+  // Audio player
+  .story__section-title {
+    margin-bottom: $space-sm;
+    padding-top: $space-sm;
+    border-top: 1px solid $stone;
+  }
+
+  .story__figure audio {
+    width: 100%;
+  }
+
+  .story__caption {
+    margin-top: $space-xs;
+    font-size: $text-sm;
+  }
+
+  // Transcript
+  .transcript {
+    font-size: $text-lg;
+    line-height: 1.7;
+  }
+    // About page
+  .about__label {
+    font-size: $text-sm;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $oxblood;
+  }
+
+  .about__text {
+    font-size: $text-lg;
+  }
+
+  .access__item dt {
+    font-family: $font-display;
+    font-size: $text-lg;
+  }
+
+  .access__item dd {
+    margin: 0;
+  }
+
+  .feedback__link {
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  // Stack the access items on small screens
+  @media (max-width: 36rem) {
+    .access__item {
+      grid-template-columns: 1fr;
+      gap: $space-xs;
+    }
+  }
 }

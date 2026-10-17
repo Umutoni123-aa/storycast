@@ -56,4 +56,66 @@
     flex-wrap: wrap;
     gap: $space-md;
   }
+    // Story page
+  .breadcrumb {
+    padding-block: $space-md;
+  }
+
+  .story {
+    max-width: $reading-width;
+    padding-bottom: $space-lg;
+  }
+
+  .story__header {
+    padding-block: $space-lg;
+  }
+
+  .story__header > * + * {
+    margin-top: $space-md;
+  }
+
+  .story__media,
+  .transcript {
+    margin-top: $space-lg;
+  }
+
+  .transcript > * + * {
+    margin-top: $space-md;
+  }
+    // About page
+  .about {
+    max-width: $reading-width;
+    padding-block: $space-xl;
+  }
+
+  .about > * + * {
+    margin-top: $space-md;
+  }
+
+  .access,
+  .feedback {
+    max-width: $reading-width;
+    padding-block: $space-lg;
+    border-top: 1px solid $stone;
+  }
+
+  .access__list {
+    margin-top: $space-md;
+  }
+
+  .access__item {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: $space-md;
+    padding-block: $space-sm;
+    border-top: 1px solid $stone;
+  }
+
+  .access__item:last-child {
+    border-bottom: 1px solid $stone;
+  }
+
+  .feedback > * + * {
+    margin-top: $space-sm;
+  }
 }
